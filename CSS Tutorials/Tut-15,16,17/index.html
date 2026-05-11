@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+        div p {
+            background-color: rgb(227, 142, 15);
+        }
+        #green{
+            background-color: green;
+        }
+        /* univesal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* psedo selector  */
+        a:visited{
+            color: red;
+            background-color: blue;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            color: yellow;
+        }
+        a:hover, p:hover, div:hover{
+            background-color: black;
+        }
+        p:first-child{
+            background-color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+            <p>
+                this is a paradfnkdfsdfd
+            </p>
+    </div>
+    <div>
+        ljsdflksadfjlsdk
+    </div>
+    <a target="_blank" href="https://www.google.com">Google</a>
+</body>
+</html>
