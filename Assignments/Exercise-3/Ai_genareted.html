@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Card Design</title>
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #e9ecef;
+      padding: 30px 0;
+    }
+
+    .card{
+      width: 350px;
+      background: white;
+      border-radius: 20px;
+      padding: 14px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    .card img{
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 18px;
+      display: block;
+    }
+
+    .tags{
+      margin-top: 16px;
+    }
+
+    .tags span{
+      display: inline-block;
+      padding: 6px 14px;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      font-size: 14px;
+      color: #777;
+      margin-right: 10px;
+    }
+
+    .card h2{
+      margin-top: 22px;
+      font-size: 42px;
+      font-weight: 500;
+      color: #222;
+    }
+
+    .card p{
+      margin-top: 20px;
+      color: #8a8a8a;
+      line-height: 1.7;
+      font-size: 18px;
+    }
+
+    .btn{
+      text-align: center;
+      margin-top: 35px;
+      margin-bottom: 10px;
+    }
+
+    .btn button{
+      border: none;
+      background: #dcecff;
+      color: #3b82f6;
+      padding: 14px 34px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn button:hover{
+      background: #c9e0ff;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <img 
+      src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop" 
+      alt="Lake"
+    >
+
+    <div class="tags">
+      <span>Nature</span>
+      <span>Lake</span>
+    </div>
+
+    <h2>Lago di Braies</h2>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Consectetur sodales morbi dignissim sed diam pharetra vitae ipsum odio.
+    </p>
+
+    <div class="btn">
+      <button>Read More</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
