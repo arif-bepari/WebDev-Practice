@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: aqua;
+        } */
+         /* .boxes *{
+            color: rgb(0, 34, 255);
+            border: 2px solid black;
+         } */
+        /* .box:nth-child(odd){
+            background-color: aquamarine;
+        } */
+        /* .box:nth-last-child(2){
+            background-color: bisque;
+        } */
+        .boxes::before{
+            content: "Before Box";
+            color: brown;
+        }
+        .boxes::after{
+            content: "After Box";
+            color: rgb(42, 165, 85);
+        }
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+        .box::first-letter{
+            color: rgb(241, 148, 10);
+            font-size: 32px;
+        }
+        input::placeholder{
+            color: rgb(9, 225, 153);
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hey I am box in boxes dive</div>
+        <div class="box">Hey I am box in boxes dive</div>
+        <div class="box">Hey I am box in boxes dive</div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+</html>
